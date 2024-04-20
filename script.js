@@ -25,3 +25,24 @@ document.getElementById('next-button').addEventListener('click', function() {
     // Benutzer zur login.html-Seite weiterleiten
     window.location.href = 'home.html';
 });
+function updateDateAndTime() {
+    const now = new Date();
+    const dateString = now.toLocaleDateString('de-DE', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric'
+    });
+    const timeString = now.toLocaleTimeString('de-DE', {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    });
+  
+    document.getElementById('date').textContent = dateString;
+    document.getElementById('digital-clock').textContent = timeString;
+  }
+  
+  // Initialisiere die Funktion beim Laden der Seite und aktualisiere jede Sekunde
+  updateDateAndTime();
+  setInterval(updateDateAndTime, 1000);
+  

@@ -95,6 +95,15 @@ body, html {
     margin-bottom: 20px;
 }
 
+.date {
+    position: absolute;
+    top: 20px; /* Abstand von oben */
+    left: 20px; /* Abstand von links */
+    color: green; /* Textfarbe */
+    font-size: 20px; /* Schriftgröße */
+    font-family: 'Arial', sans-serif; /* Schriftart */
+}
+  
 #next-button {
     display: block;
     padding: 50px 20px; /* Oder wie auch immer du den Button gestaltet haben möchtest */
