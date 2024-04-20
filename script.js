@@ -23,5 +23,5 @@ setInterval(updateClock, 1000);
 // EventListener für den "Next"-Button
 document.getElementById('next-button').addEventListener('click', function() {
     // Benutzer zur login.html-Seite weiterleiten
-    window.location.href = 'login.html';
+    window.location.href = 'home.html';
 });
