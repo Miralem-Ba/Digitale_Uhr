@@ -5,50 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Startseite</title>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden; /* Verhindert Scrollbalken, wenn nicht erwünscht */
-        }
-        .header-image {
-            width: 100vw; /* 100% der Viewport-Breite */
-            height: 100vh; /* 100% der Viewport-Höhe */
-            object-fit: cover; /* Stellt sicher, dass das Bild den Container bedeckt, ohne seine Proportionen zu verlieren */
-            position: fixed; /* Fixiert das Bild, damit es auch beim Scrollen im Hintergrund bleibt */
-            top: 0;
-            left: 0;
-        }
-        .container {
-            position: absolute;
-            right: 32px;
-            top: 16px;
-            font-size: 18px;
-            z-index: 10; /* Stellt sicher, dass die Links über dem Bild liegen */
-        }
-        .menu-link {
-            color: white; /* Ändert die Farbe zu weiß für bessere Sichtbarkeit */
-            text-decoration: none;
-            margin-left: 20px; /* Fügt einen Abstand zwischen den Links hinzu */
-        }
-        .menu-link:not(:last-child):after {
-            content: '|'; /* Fügt Trennzeichen zwischen den Links hinzu */
-            margin-left: 20px;
-            color: white; /* Farbe des Trennzeichens */
-        }
-        .menu-link:hover {
-            text-decoration: underline;
-        }
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden; /* Verhindert Scrollbalken, wenn nicht erwünscht */
+      }
+      .header-image {
+        width: 100vw; /* 100% der Viewport-Breite */
+        height: 100vh; /* 100% der Viewport-Höhe */
+        object-fit: cover; /* Stellt sicher, dass das Bild den Container bedeckt, ohne seine Proportionen zu verlieren */
+        position: fixed; /* Fixiert das Bild, damit es auch beim Scrollen im Hintergrund bleibt */
+        top: 0;
+        left: 0;
+      }
+      .container {
+        position: absolute;
+        right: 32px;
+        top: 16px;
+        font-size: 18px;
+        z-index: 10; /* Stellt sicher, dass die Links über dem Bild liegen */
+      }
+      .menu-link {
+        color: white; /* Ändert die Farbe zu weiß für bessere Sichtbarkeit */
+        text-decoration: none;
+        margin-left: 20px; /* Fügt einen Abstand zwischen den Links hinzu */
+      }
+      .menu-link:not(:last-child):after {
+        content: "|"; /* Fügt Trennzeichen zwischen den Links hinzu */
+        margin-left: 20px;
+        color: white; /* Farbe des Trennzeichens */
+      }
+      .menu-link:hover {
+        text-decoration: underline;
+      }
     </style>
-    
   </head>
   <body>
     <div class="container">
-        <a class="menu-link" href="">Home</a>
-        <a class="menu-link" href="">Über uns</a>
-        <a class="menu-link" href="">Kontakt</a>
-        <a class="menu-link" href="">Impressum</a>
+      <a class="menu-link" href="">Home</a>
+      <a class="menu-link" href="">Über uns</a>
+      <a class="menu-link" href="">Kontakt</a>
+      <a class="menu-link" href="">Impressum</a>
     </div>
-    <img class="header-image" src="images/fog-4436636_1280.jpg">
+    <img class="header-image" src="images/fog-4436636_1280.jpg" />
   </body>
 </html>
