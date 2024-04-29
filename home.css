@@ -43,10 +43,11 @@ body, html {
     z-index: 3;
     position: relative;
     position: 50px;
+    padding: 50px ;
     left: 50px;
-    top: 300px;
+    top: 60px;
     color: #004626;
-    font-size: 70px;
+    font-size: 40px;
     width: 500px;
     text-shadow: 5px 5px 5px rgba(0,0,0,0);
   }
@@ -55,5 +56,6 @@ body, html {
     position: relative;
     position: 100px;
     height: 200px;
-    padding: 30px 100px;
+    padding: 10px 100px;
+    top: 300;
   }
