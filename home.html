@@ -4,51 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Startseite</title>
-    <style>
-      body,
-      html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow: hidden; /* Verhindert Scrollbalken, wenn nicht erwünscht */
-      }
-      .header-image {
-        width: 100vw; /* 100% der Viewport-Breite */
-        height: 100vh; /* 100% der Viewport-Höhe */
-        object-fit: cover; /* Stellt sicher, dass das Bild den Container bedeckt, ohne seine Proportionen zu verlieren */
-        position: fixed; /* Fixiert das Bild, damit es auch beim Scrollen im Hintergrund bleibt */
-        top: 0;
-        left: 0;
-      }
-      .container {
-        position: absolute;
-        right: 32px;
-        top: 16px;
-        font-size: 18px;
-        z-index: 10; /* Stellt sicher, dass die Links über dem Bild liegen */
-      }
-      .menu-link {
-        color: white; /* Ändert die Farbe zu weiß für bessere Sichtbarkeit */
-        text-decoration: none;
-        margin-left: 20px; /* Fügt einen Abstand zwischen den Links hinzu */
-      }
-      .menu-link:not(:last-child):after {
-        content: "|"; /* Fügt Trennzeichen zwischen den Links hinzu */
-        margin-left: 20px;
-        color: white; /* Farbe des Trennzeichens */
-      }
-      .menu-link:hover {
-        text-decoration: underline;
-      }
-    </style>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
   </head>
   <body>
+    <img class="header-image" src="images/fog-4436636_1280.jpg" />
     <div class="container">
+      <img src="images/Logo.png">
+      <div>
       <a class="menu-link" href="">Home</a>
       <a class="menu-link" href="">Über Mich</a>
       <a class="menu-link" href="">Kontakt</a>
       <a class="menu-link" href="">Impressum</a>
+      </div>
     </div>
-    <img class="header-image" src="images/fog-4436636_1280.jpg" />
+  
+    <h1 class="headline"> Meine Webseite </h1>
+
+    <div class="description-section"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero culpa a illum expedita excepturi. Cum, fugit neque accusamus quam quaerat id soluta quod, quasi veniam placeat repudiandae autem. Rerum, pariatur.</div>
   </body>
 </html>
