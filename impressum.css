@@ -1,10 +1,9 @@
 body {
-    /* Hintergrundfarbe, Schriftart und Abstände für den gesamten Inhalt des Body-Tags */
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-image: url(./images/berge.jpg);
     background-size: cover;
     background-position: center;
-  padding: 0;
+    padding: 0;
     margin: 0;
 }
 
@@ -12,257 +11,78 @@ body {
     z-index: 2;
     position: absolute;
     right: 32px;
-    left: 0px;
-    top: 40px;
+    left: 32px;
+    top: 16px;
     font-size: 18px;
-    z-index: 10; /* Stellt sicher, dass die Links über dem Bild liegen */
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+}
 
 .header-image {
-    /* Stile für das Header-Bild */
     width: 100%;
     height: 400px;
     object-fit: cover;
-    object-position: 100%;
     display: block;
-}
-
-.headline {
-    /* Stile für die Überschrift */
-    flex: 1;
-    text-align: center;
-}
-
-.image-container {
-    /* Stile für den Bildcontainer */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .navbar {
-    /* Stile für die Navigationsleiste */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-a {
-    /* Stile für die Navigationslinks */
-    color: rgb(0, 0, 0);
+.menu-link {
+    color: #004626;
     text-decoration: none;
-    margin-left: 16px;
-    font-weight: 700;
+    margin-left: 20px; /* Fügt einen Abstand zwischen den Links hinzu */
 }
 
-a:hover {
-    /* Stile für den Hover-Zustand der Navigationslinks */
+.menu-link:not(:last-child):after {
+    content: "|"; /* Fügt Trennzeichen zwischen den Links hinzu */
+    margin-left: 20px;
+    color: #004626; /* Farbe des Trennzeichens */
+}
+
+.menu-link:hover {
     text-decoration: underline;
 }
 
-.text-container {
-    /* Stile für den Textcontainer */
-    background-color:white
-    padding 7px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-.text-cont{
-    padding: 7px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 100px;
-    margin-right: 200px;
-}
-
-.maps-container {
-    /* Stile für den Kartencontainer */
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.maps-right {
-    /* Stile für den rechten Kartenbereich */
-    width: 30%;
-    margin-left: 20px;
-}
-
-.maps-frame {
-    /* Stile für den Kartenrahmen */
-    width: 100%;
-    flex: 1 0;
-    height: 420px;
-}
-
-.maps-frame iframe {
-    width: 100%;
-    height: 100%;
-}
-
-.legal-content {
-    /* Stile für den rechtlichen Hinweis */
-    padding: 8px;
-}
-
-.image_miralembanovi {
-    /* Stile für das Bild "Miralem Banovi" */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 7px;
-}
-
-.MiralemBanovi {
-    /* Stile für das Bild "Miralem Banovi" */
-    width: 600px;
-    height: auto;
-    align-items: center;
-}
-
-.MiiralemBanovi{
-    width: 600px;
-    height: auto;
-    margin-right: 20px;
-    margin-left: 20%;
-}
-.Image_reise {
-    /* Stile für den Reisebildcontainer */
-    display: flex;
-    justify-content: center;
-}
-
-.image {
-    /* Stile für das Zypern-Bild */
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    flex: 1;
-    object-fit: cover;
-    margin: 10px;
-}
-
 .coll-container {
-    /* Stile für den Kollaps-Container */
     padding: 7px;
     display: block;
     margin-top: 120px;
-
 }
 
-.text-container.maps-right {
-    align-items: end;
-    width: 80%;
-    flex: 0;
-    display: block;
-    margin-left: 6%;
+.page.impressum-page {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    padding: 20px;
+    margin: 20px;
 }
 
-.video-container {
-    width: 80%;
-    flex: 0 0;
-    margin-left: 50px;
-    display: block;
-    height: 350px;
+.legal-content {
+    padding: 8px;
 }
 
-.video-container iframe {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
 /* Medienabfrage für Bildschirmbreiten bis 800px */
 @media (max-width: 800px) {
-    .header-image{
+    .header-image {
         width: 100%;
         height: auto;
         box-sizing: border-box;
     }
 
-    .MiralemBanovi{
-        width: 100%;
-        height: auto;
-        box-sizing: border-box;
+    .menu-link {
+        margin-left: 10px;
     }
 
-    .MiiralemBanovi {
-        max-width: 53%;
-        max-height: 100%;
-        margin-left: 13%;
-        margin-right: 10%;
-        width: auto;
-        height: auto;
-    }
-
-    .image {
-        width: 80%;
-        height: auto;
-        box-sizing: border-box;
-    }
-
-    .image-container{
-        width: 100%;
-        height: auto;
-        box-sizing: border-box;
-        align-items: center;
-    }
-
-    .image_miralembanovi {
-        width: 100%;
-        height: auto;
-        display: flex;
+    .container {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-        padding-left: 10px;
-        padding-right: 25px;
     }
 
-    .body {
-        width: 100%;
-        height: auto;
-        box-sizing: border-box;
-        align-items: center;
+    .page.impressum-page {
+        margin: 10px;
+        padding: 10px;
     }
-
-    .Image_reise{
-        width: 80%;
-        height: auto;
-        box-sizing: border-box;
-    }
-
-    .Ganze_Webseite{
-        width: 80%;
-        height: auto;
-        box-sizing: border-box;
-        align-items: center;
-        padding-left: 60px;
-    }
-    .text-container{
-        box-sizing: border-box;
-        margin-left: 10%;
-        margin-right: 10%;
-        box-sizing: border-box;
-    }
-
-    .text-cont {
-        margin-top: 20px;
-        margin-left: 25%;
-        margin-right: 25%;
-        text-align: center;
-    }
-    .text-container.maps-right {
-        margin-left: 15%;
-        margin-right: 15%;
-        align-items: center;
-    }
-  }
+}
